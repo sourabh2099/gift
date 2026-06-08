@@ -206,7 +206,7 @@ function CountdownScreen({ name = "", timeLeft }) {
         </h1>
 
         <p className="cd-teaser">
-         Something is still cooking here.
+         Something is still cooking here. Please wait for more ..
         </p>
 
         {/* Timer */}
@@ -254,7 +254,6 @@ export default function BirthdayPage(props) {
     return () => clearInterval(id);
   }, []);
 
-  // ── Conditional render ──────────────────────────────
   if (timeLeft) {
     return <CountdownScreen name={props.name} timeLeft={timeLeft} />;
   }
